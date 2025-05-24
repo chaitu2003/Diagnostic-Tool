@@ -1,0 +1,11 @@
+label {
+    font-weight: 450;
+}
+
+input[type=checkbox] {
+    cursor: pointer;
+}
+
+.card {
+    margin-bottom: 10px;
+}
