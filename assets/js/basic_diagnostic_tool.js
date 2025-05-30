@@ -4,6 +4,11 @@ function cal(event) {
     const selectedSymptoms = Array.from(document.querySelectorAll('input[name="symptom"]:checked'))
         .map(checkbox => checkbox.value.toLowerCase());
 
+    if(!isNaN(selectedSymptoms)){
+        alert("please select symptoms");
+        return;
+    }
+
     const results = document.getElementById('result');
     results.innerHTML = ""; 
 
