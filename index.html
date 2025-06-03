@@ -9,86 +9,89 @@
     <script src="assets/js/basic_diagnostic_tool.js" defer></script>
 </head>
 <body>
-    <div class="container mt-4">
-        <div class="card shadow p-4">
-            <div class="card-body">
-                <h3 class="card-title text-primary">About this Tool ⚕️</h3>
-                <p class="card-text">The <strong>Basic Diagnostic Tool</strong> is a self-assesment utility designed to provide insights based on your selected symptoms.
-                By analysing common symptom patterns and matching them with known medical conditions, it helps you to identify potential health issue for further exploration.
-                </p>
-                <p class="card-text">This tool <strong>Does NOT replace professional medical advice</strong> but helps as a first step in understanding what might affecting your health.
-                Please do contact a professional for accurate diagnosis.
-                </p>
-                <h5 class="text-success mt-3">How it works:</h5>
-                <ul>
-                    <li>Select your Symptom/Symptoms from the list.</li>
-                    <li>click the <strong>Submit</strong> button.</li>
-                    <li>In the result section you will find the matched disease/diseases for your symptom/symptoms with confidence percentages. </li>
-                </ul>
+    <div class="bg">
+        <div class="bg_img"></div>
+        <div class="container mt-4">
+            <div class="card shadow p-4">
+                <div class="card-body">
+                    <h3 class="card-title text-primary">About this Tool ⚕️</h3>
+                    <p class="card-text">The <strong>Basic Diagnostic Tool</strong> is a self-assesment utility designed to provide insights based on your selected symptoms.
+                    By analysing common symptom patterns and matching them with known medical conditions, it helps you to identify potential health issue for further exploration.
+                    </p>
+                    <p class="card-text">This tool <strong>Does NOT replace professional medical advice</strong> but helps as a first step in understanding what might affecting your health.
+                    Please do contact a professional for accurate diagnosis.
+                    </p>
+                    <h5 class="text-success mt-3">How it works:</h5>
+                    <ul>
+                        <li>Select your Symptom/Symptoms from the list.</li>
+                        <li>click the <strong>Submit</strong> button.</li>
+                        <li>In the result section you will find the matched disease/diseases for your symptom/symptoms with confidence percentages. </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container mt-5">
-        <div class="card shadow p-4">
-            <h1 class="text-center mb-4" style="text-wrap: pretty;">Basic Diagnostic Tool🩺</h1>
-            <form onsubmit="cal(event)">
-                <div class="card" style="padding: 10px;" >
-                    <label class="form-label fw-bold">Please select your symptoms:</label>
-                    
-                    <div class="row row-cols-1 row-cols-md-2 g-2" style="padding: 20px;">
+        <div class="container mt-4">
+            <div class="card shadow p-4">
+                <h1 class="text-center mb-4" style="text-wrap: pretty;">Basic Diagnostic Tool🩺</h1>
+                <form onsubmit="cal(event)">
+                    <div class="card" style="padding: 10px;" >
+                        <label class="form-label fw-bold">Please select your symptoms:</label>
                         
-                        <div class="form-check col">
-                            <input class="form-check-input" type="checkbox" id="fever" name="symptom" value="fever">
-                            <label class="form-check-label" for="fever">Fever</label>
-                        </div>
-                        <div class="form-check col">
-                            <input class="form-check-input" type="checkbox" id="cough" name="symptom" value="cough">
-                            <label class="form-check-label" for="cough">Cough</label>
-                        </div>
-                        <div class="form-check col">
-                            <input class="form-check-input" type="checkbox" id="fatigue" name="symptom" value="fatigue">
-                            <label class="form-check-label" for="fatigue">Fatigue</label>
-                        </div>
-                        <div class="form-check col">
-                            <input class="form-check-input" type="checkbox" id="chest-pain" name="symptom" value="chest-pain">
-                            <label class="form-check-label" for="chest-pain">Chest Pain</label>
-                        </div>
-                        <div class="form-check col">
-                            <input class="form-check-input" type="checkbox" id="shortness-of-breath" name="symptom" value="shortness-of-breath">
-                            <label class="form-check-label" for="shortness-of-breath">Shortness of breath</label>
-                        </div>
-                        <div class="form-check col">
-                            <input class="form-check-input" type="checkbox" id="headache" name="symptom" value="headache">
-                            <label class="form-check-label" for="headache">Headache</label>
-                        </div>
-                        <div class="form-check col">
-                            <input class="form-check-input" type="checkbox" id="sore-throat" name="symptom" value="sore-throat">
-                            <label class="form-check-label" for="sore-throat">Sore Throat</label>
-                        </div>
-                        <div class="form-check col">
-                            <input class="form-check-input" type="checkbox" id="nausea" name="symptom" value="nausea">
-                            <label class="form-check-label" for="nausea">Nausea</label>
-                        </div>
-                        <div class="form-check col">
-                            <input class="form-check-input" type="checkbox" id="joint-pain" name="symptom" value="joint-pain">
-                            <label class="form-check-label" for="joint-pain">Joint Pain</label>
-                        </div>
-                        <div class="form-check col">
-                            <input class="form-check-input" type="checkbox" id="rash" name="symptom" value="rash">
-                            <label class="form-check-label" for="rash">Rash</label>
+                        <div class="row row-cols-1 row-cols-md-2 g-2" style="padding: 20px;">
+                            
+                            <div class="form-check col">
+                                <input class="form-check-input" type="checkbox" id="fever" name="symptom" value="fever">
+                                <label class="form-check-label" for="fever">Fever</label>
+                            </div>
+                            <div class="form-check col">
+                                <input class="form-check-input" type="checkbox" id="cough" name="symptom" value="cough">
+                                <label class="form-check-label" for="cough">Cough</label>
+                            </div>
+                            <div class="form-check col">
+                                <input class="form-check-input" type="checkbox" id="fatigue" name="symptom" value="fatigue">
+                                <label class="form-check-label" for="fatigue">Fatigue</label>
+                            </div>
+                            <div class="form-check col">
+                                <input class="form-check-input" type="checkbox" id="chest-pain" name="symptom" value="chest-pain">
+                                <label class="form-check-label" for="chest-pain">Chest Pain</label>
+                            </div>
+                            <div class="form-check col">
+                                <input class="form-check-input" type="checkbox" id="shortness-of-breath" name="symptom" value="shortness-of-breath">
+                                <label class="form-check-label" for="shortness-of-breath">Shortness of breath</label>
+                            </div>
+                            <div class="form-check col">
+                                <input class="form-check-input" type="checkbox" id="headache" name="symptom" value="headache">
+                                <label class="form-check-label" for="headache">Headache</label>
+                            </div>
+                            <div class="form-check col">
+                                <input class="form-check-input" type="checkbox" id="sore-throat" name="symptom" value="sore-throat">
+                                <label class="form-check-label" for="sore-throat">Sore Throat</label>
+                            </div>
+                            <div class="form-check col">
+                                <input class="form-check-input" type="checkbox" id="nausea" name="symptom" value="nausea">
+                                <label class="form-check-label" for="nausea">Nausea</label>
+                            </div>
+                            <div class="form-check col">
+                                <input class="form-check-input" type="checkbox" id="joint-pain" name="symptom" value="joint-pain">
+                                <label class="form-check-label" for="joint-pain">Joint Pain</label>
+                            </div>
+                            <div class="form-check col">
+                                <input class="form-check-input" type="checkbox" id="rash" name="symptom" value="rash">
+                                <label class="form-check-label" for="rash">Rash</label>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="text-center">
-                    <button type="submit" class="btn btn-primary px-2">Submit</button>
-                </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary px-2">Submit</button>
+                    </div>
 
-                <div class="mt-4">
-                    <h5>Result:</h5>
-                    <div id="result" class="alert alert-info">No conditions checked yet.</div>
-                </div>
-            </form>
+                    <div class="mt-4">
+                        <h5>Result:</h5>
+                        <div id="result" class="alert alert-info">No conditions checked yet.</div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </body>
